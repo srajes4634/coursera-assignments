@@ -1,1 +1,46 @@
+body {
+  font-family: Arial, sans-serif; /* Optional font-family */
+}
 
+.container {
+  width: 100%;
+  max-width: 1200px; 
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.section {
+  width: 33.33%;
+  float: left;
+  box-sizing: border-box;
+  border: 1px solid black;
+  padding: 10px;
+  background-color: #f2f2f2; 
+}
+
+.section-title {
+  position: relative;
+  top: 0;
+  right: 0;
+  background-color: #ff9999; 
+  padding: 5px;
+  font-size: 125%; /* 25% larger than the dummy text */
+  color: white; /* Adjust text color to be readable on the background color */
+}
+
+/* Media Queries for Different Screen Sizes */
+
+/* Tablet View */
+@media only screen and (max-width: 991px) {
+  .section {
+    width: 50%;
+  }
+}
+
+/* Mobile View */
+@media only screen and (max-width: 767px) {
+  .section {
+    width: 100%;
+  }
+}
